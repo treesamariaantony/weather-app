@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .app {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+  }
+  
+  .loading {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #007bff;
+  }
+  
+  .error {
+    margin: 20px 0;
+    font-size: 18px;
+    color: red;
+  }
+  
+  .weather-info h2 {
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .weather-info p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  .weather-info img {
+    margin: 10px 0;
+  }
+  
+  .recent-searches {
+    margin-top: 20px;
+  }
+  
+  .recent-searches h3 {
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .recent-searches ul {
+    list-style-type: none;
+    padding: 0;
+    color: black;
+  }
+  
+  .recent-searches li {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .recent-searches li:hover {
+    background-color: black;
+    color:#ccc ;
+  }
+
+  .unit-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.unit-toggle span {
+    margin: 0 10px;
+    font-size: 16px;
+    color: black;
+}
+
+/* Toggle switch styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.offline-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    color: #333;
+}
